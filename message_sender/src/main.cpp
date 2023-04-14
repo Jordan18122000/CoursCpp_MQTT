@@ -35,7 +35,7 @@ int main()
         std::cout << "Connected" << std::endl;
 
         std::cout << "Sending message..." << std::endl;
-        mqtt::message_ptr pubmsg = mqtt::make_message(TOPIC, "fais pas ta mijaurée");
+        mqtt::message_ptr pubmsg = mqtt::make_message(TOPIC, "JordanClement_Send");
         pubmsg->set_qos(0);
         client.publish(pubmsg)->wait();
 
